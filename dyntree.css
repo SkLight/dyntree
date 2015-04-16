@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dyntree-wrapper {
+    float: left;
+    width: 30%;
+    height: 600px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 1px darkgray;
+    overflow: auto;
+}
+
+.dyntree-wrapper ul {
+    list-style: none;
+}
+
+.dyntree-wrapper li {
+    white-space: nowrap;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.dyntree-wrapper li:before {
+}
+
+li.list-folded:before {
+    padding: 0 5px;
+    content: '+';
+}
+
+li.list-unfolded:before {
+    padding: 0 7px;
+    content: "-";
+}
+
+.nested {
+    margin-left: 20px;
+}
+
+li.list-endpoint:before {
+    margin-left: 20px;
+    padding: 0;
+    content: '';
+}
